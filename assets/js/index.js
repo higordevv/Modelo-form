@@ -15,6 +15,11 @@ class ValidaFormulario {
         e.preventDefault();
         const filds = this.checkfilds();
         const passwdTrue = this.passwdTrue();
+
+        if(filds && passwdTrue){
+            alert('Formulario enviado')
+            this.formulario.submit();
+        }
     };
 
     passwdTrue(){
